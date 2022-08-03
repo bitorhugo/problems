@@ -1,0 +1,4 @@
+(lang dune 3.4)
+(name problems)
+(sections (lib .) (bin ../../bin) (doc ../../doc/problems))
+(files (lib (META dune-package opam)) (bin (problems)) (doc (LICENSE)))
