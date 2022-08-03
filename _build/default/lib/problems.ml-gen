@@ -10,6 +10,10 @@ module Four = Problems__Four
 module One = Problems__One
 
 
+(** @canonical Problems.Six *)
+module Six = Problems__Six
+
+
 (** @canonical Problems.Three *)
 module Three = Problems__Three
 
