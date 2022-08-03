@@ -3,7 +3,7 @@
 # Shared cache: disabled
 # Workspace root: /Users/VitorHugo/dev/ocaml/problems
 # Auto-detected concurrency: 4
-$ /Users/VitorHugo/.opam/4.14.0/bin/ocamlc.opt -config > /var/folders/cy/lb8cjszn16x5845v1r4q4txr0000gp/T/dune_829594_output
+$ /Users/VitorHugo/.opam/4.14.0/bin/ocamlc.opt -config > /var/folders/cy/lb8cjszn16x5845v1r4q4txr0000gp/T/dune_bef675_output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
@@ -111,3 +111,12 @@ $ /Users/VitorHugo/.opam/4.14.0/bin/ocamlc.opt -config > /var/folders/cy/lb8cjsz
 #      ; windows_unicode = false
 #      }
 #  }
+$ (cd _build/default && /Users/VitorHugo/.opam/4.14.0/bin/ocamldep.opt -modules -impl lib/three.ml) > _build/default/lib/.problems.objs/three.ml.d
+$ (cd _build/default && /Users/VitorHugo/.opam/4.14.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.problems.objs/byte -no-alias-deps -opaque -open Problems -o lib/.problems.objs/byte/problems__Three.cmo -c -impl lib/three.ml)
+$ (cd _build/default && /Users/VitorHugo/.opam/4.14.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/problems.cma lib/.problems.objs/byte/problems.cmo lib/.problems.objs/byte/problems__Two.cmo lib/.problems.objs/byte/problems__Three.cmo lib/.problems.objs/byte/problems__One.cmo)
+$ (cd _build/default && /Users/VitorHugo/.opam/4.14.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I bin/.main.eobjs/byte -I lib/.problems.objs/byte -no-alias-deps -opaque -o bin/.main.eobjs/byte/dune__exe__Main.cmi -c -intf bin/main.mli)
+$ (cd _build/default && /Users/VitorHugo/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I lib/.problems.objs/byte -I lib/.problems.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /Users/VitorHugo/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.problems.objs/byte -I lib/.problems.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Problems -o lib/.problems.objs/native/problems__Three.cmx -c -impl lib/three.ml)
+$ (cd _build/default && /Users/VitorHugo/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/problems.cmxa lib/.problems.objs/native/problems.cmx lib/.problems.objs/native/problems__Two.cmx lib/.problems.objs/native/problems__Three.cmx lib/.problems.objs/native/problems__One.cmx)
+$ (cd _build/default && /Users/VitorHugo/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -shared -linkall -I lib -o lib/problems.cmxs lib/problems.cmxa)
+$ (cd _build/default && /Users/VitorHugo/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe lib/problems.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)

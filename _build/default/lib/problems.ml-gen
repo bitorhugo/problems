@@ -2,5 +2,9 @@
 module One = Problems__One
 
 
+(** @canonical Problems.Three *)
+module Three = Problems__Three
+
+
 (** @canonical Problems.Two *)
 module Two = Problems__Two

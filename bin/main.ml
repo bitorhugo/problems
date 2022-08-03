@@ -17,4 +17,3 @@ let () = Printf.printf "last: %s\n" (string_of_stringoption last_string)
 let () = Printf.printf "last: %d\n" (int_of_intoption last_int)
 
 
-let last_two_string = Two.last_two ["a";"b";"c"]
