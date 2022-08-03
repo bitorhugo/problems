@@ -1,1 +1,5 @@
-let printone = print_endline "Hello from problem one"
+(* return an option *)
+let rec last = function 
+  | [] -> None
+  | [x] -> Some x
+  | _ :: t -> last t
