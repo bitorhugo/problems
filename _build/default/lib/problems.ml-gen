@@ -1,3 +1,7 @@
+(** @canonical Problems.Four *)
+module Four = Problems__Four
+
+
 (** @canonical Problems.One *)
 module One = Problems__One
 
